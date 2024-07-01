@@ -1,0 +1,7 @@
+*.db
+*.py[cod]
+.web
+__pycache__/
+pyrightconfig.json
+.venv
+.DS_Store
