@@ -17,6 +17,7 @@ def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.vstack(
         rx.color_mode.button(position="top-right"),
+        # nav bar
         nav(),
         class_name="w-full max-w-7xl p-3 space-y-4 mx-auto",
     )
