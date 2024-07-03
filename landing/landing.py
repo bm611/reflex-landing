@@ -4,6 +4,7 @@ import reflex as rx
 
 from rxconfig import config
 from components.nav import nav
+from components.hero import hero
 
 
 class State(rx.State):
@@ -16,9 +17,9 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.vstack(
-        rx.color_mode.button(position="top-right"),
         # nav bar
         nav(),
+        hero(),
         class_name="w-full max-w-7xl p-3 space-y-4 mx-auto",
     )
 
